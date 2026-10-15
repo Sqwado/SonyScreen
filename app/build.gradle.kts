@@ -30,10 +30,15 @@ android {
     signingConfigs {
         create("release") {
             if (releaseKeystore.exists()) {
-                storeFile = rootProject.file(releaseProps.getProperty("storeFile"))
+                val storeFilePath = releaseProps.getProperty("storeFile")
+                    ?: error("keystore.properties: missing storeFile (UTF-8 BOM?)")
+                storeFile = rootProject.file(storeFilePath.trim())
                 storePassword = releaseProps.getProperty("storePassword")
+                    ?: error("keystore.properties: missing storePassword")
                 keyAlias = releaseProps.getProperty("keyAlias")
+                    ?: error("keystore.properties: missing keyAlias")
                 keyPassword = releaseProps.getProperty("keyPassword")
+                    ?: error("keystore.properties: missing keyPassword")
             }
         }
     }
