@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SonyScreen</string>
+    <string name="preview_description">Retour vidéo de l’appareil photo</string>
+    <string name="status_waiting">Branchez le boîtier en USB-C. Mode PC Remote, Ctrl avec smartphone désactivé. Destination d’enregistrement : PC + boîtier, RAW seul.</string>
+    <string name="status_permission">Autorisez l’accès USB pour afficher le live view.</string>
+    <string name="status_negotiating">Connexion au boîtier…</string>
+    <string name="status_pc_remote">Passez la caméra en PC Remote, désactivez Ctrl avec smartphone, Dest. enreg. image fixe → PC + boîtier, format RAW, Affichage auto désactivé, puis reconnectez le câble.</string>
+    <string name="status_disconnected">Caméra débranchée.</string>
+    <string name="status_protocol">Le boîtier a interrompu le transfert. Débranchez le câble et reconnectez-le.</string>
+    <string name="status_open_failed">Impossible d’ouvrir le port USB. Vérifiez le câble data et le mode PC Remote.</string>
+    <string name="status_playback">Lecture sur le boîtier</string>
+    <string name="status_frame">%1$d × %2$d · %3$d img/s</string>
+    <string name="status_frame_named">%1$s · %2$d × %3$d · %4$d img/s</string>
+    <string name="touch_lock">Commandes verrouillées. Maintenir deux secondes pour les afficher.</string>
+    <string name="touch_unlocked">Verrouiller les commandes</string>
+    <string name="flip_horizontal">Miroir horizontal</string>
+    <string name="flip_vertical">Miroir vertical</string>
+    <string name="flip_180">Rotation 180 degrés</string>
+    <string name="orientation_toggle">Inverser le sens du paysage</string>
+</resources>

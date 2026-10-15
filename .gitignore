@@ -1,0 +1,60 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Gradle
+.gradle/
+**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Local configuration (SDK path, machine JDK, signing secrets)
+local.properties
+keystore.properties
+*.keystore
+*.jks
+*.pem
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+
+# Cursor / agent local state
+.cursor/
+.agent-transcripts/
+
+# Archives that must not be published
+Monitor+.zip
+*.zip
+!gradle/wrapper/gradle-wrapper.jar
+
+# Store screenshots you capture locally (keep official assets under docs/store/assets/)
+docs/store/screenshots/

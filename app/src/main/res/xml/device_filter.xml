@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sony VID 0x054C, USB still-image / PTP (class 6, subclass 1, protocol 1). -->
+    <usb-device
+        class="6"
+        protocol="1"
+        subclass="1"
+        vendor-id="1356" />
+</resources>

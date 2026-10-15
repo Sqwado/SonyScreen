@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/side_start"
+        android:layout_width="@dimen/side_rail"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/touch_lock"
+            style="@style/IconControl"
+            android:contentDescription="@string/touch_lock"
+            android:src="@drawable/ic_lock" />
+
+        <ImageButton
+            android:id="@+id/flip_horizontal"
+            style="@style/IconControl"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/flip_horizontal"
+            android:src="@drawable/ic_flip"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/flip_vertical"
+            style="@style/IconControl"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/flip_vertical"
+            android:src="@drawable/ic_flip_vertical"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/flip_180"
+            style="@style/IconControl"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/flip_180"
+            android:src="@drawable/ic_flip_180"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/orientation"
+            style="@style/IconControl"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/orientation_toggle"
+            android:src="@drawable/ic_rotation"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextureView
+        android:id="@+id/preview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/preview_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/side_end"
+        app:layout_constraintStart_toEndOf="@id/side_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pause_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/status_playback"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/preview"
+        app:layout_constraintEnd_toEndOf="@id/preview"
+        app:layout_constraintStart_toStartOf="@id/preview"
+        app:layout_constraintTop_toTopOf="@id/preview"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/side_end"
+        android:layout_width="@dimen/side_rail"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/status_waiting"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1024 × 680 · 18 img/s" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

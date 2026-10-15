@@ -1,0 +1,29 @@
+=== TITLE (max 30 characters) ===
+SonyScreen — USB monitor
+
+=== SHORT DESCRIPTION (max 80 characters) ===
+Fullscreen live view for Sony Alpha over USB-C (PC Remote).
+
+=== FULL DESCRIPTION ===
+SonyScreen turns a USB-C OTG Android phone or tablet into a monitor for Sony Alpha cameras in PC Remote mode.
+
+Features
+• Fullscreen landscape live view
+• Horizontal / vertical / 180° flips
+• Touch lock (long-press 2 seconds)
+• Landscape / reverse landscape toggle
+• Live view resumes after shutter (temporary capture object is drained)
+
+Requirements
+• Sony body with PTP / PC Remote (tested on A7R III)
+• USB-C data cable (not charge-only)
+• PC Remote mode
+• Smartphone control disabled
+• Still image destination: PC + Camera
+• RAW-only recommended
+• Auto review disabled
+
+SonyScreen is not a Sony product and is not affiliated with Sony Group Corporation. Sony and Alpha are trademarks of Sony Group Corporation.
+
+=== RELEASE NOTES 1.0.0 ===
+Initial release: USB PTP live view, flips, touch lock, post-capture drain.
