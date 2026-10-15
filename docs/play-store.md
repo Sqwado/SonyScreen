@@ -21,6 +21,10 @@ Guide opérationnel. Checklist cochable : [`store/console-checklist.md`](store/c
 | [`store/listing-en.txt`](store/listing-en.txt) | Coller dans la fiche EN |
 | [`store/assets/icon-512.png`](store/assets/icon-512.png) | Icône store 512×512 |
 | [`store/assets/feature-graphic.png`](store/assets/feature-graphic.png) | Feature graphic 1024×500 |
+| [`store/assets/screenshot-live-view.jpg`](store/assets/screenshot-live-view.jpg) | Capture live view |
+| [`store/assets/screenshot-waiting-controls.jpg`](store/assets/screenshot-waiting-controls.jpg) | Attente + commandes |
+| [`store/assets/screenshot-waiting-locked.jpg`](store/assets/screenshot-waiting-locked.jpg) | Attente + UI verrouillée |
+| [`store/assets/screenshot-playback.jpg`](store/assets/screenshot-playback.jpg) | Lecture sur le boîtier |
 | [`index.html`](index.html) | Politique de confidentialité (GitHub Pages) |
 | [`../PRIVACY.md`](../PRIVACY.md) | Même contenu en Markdown |
 | [`../scripts/create-keystore.ps1`](../scripts/create-keystore.ps1) | Créer le keystore upload |

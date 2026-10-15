@@ -40,6 +40,7 @@ import kotlin.math.roundToInt
 class MainActivity : AppCompatActivity() {
     private lateinit var usbManager: UsbManager
     private lateinit var preview: TextureView
+    private lateinit var waitingPattern: WaitingPatternView
     private lateinit var pauseMessage: TextView
     private lateinit var status: TextView
     private lateinit var touchLock: ImageButton
@@ -97,6 +98,7 @@ class MainActivity : AppCompatActivity() {
                         main.removeCallbacks(showPauseMessage)
                         pauseMessage.visibility = View.GONE
                         clearPreview()
+                        setWaitingPatternVisible(true)
                         model = null
                         status.setText(R.string.status_disconnected)
                     }
@@ -111,6 +113,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         preview = findViewById(R.id.preview)
+        waitingPattern = findViewById(R.id.waiting_pattern)
         pauseMessage = findViewById(R.id.pause_message)
         status = findViewById(R.id.side_end)
         touchLock = findViewById(R.id.touch_lock)
@@ -212,6 +215,9 @@ class MainActivity : AppCompatActivity() {
                     if (isDestroyed || session !== live) return@post
                     main.removeCallbacks(showPauseMessage)
                     pauseMessage.visibility = View.GONE
+                    if (notice == Notice.DISCONNECTED || notice == Notice.PROTOCOL) {
+                        setWaitingPatternVisible(true)
+                    }
                     status.setText(textFor(notice))
                 }
             }
@@ -232,6 +238,7 @@ class MainActivity : AppCompatActivity() {
                 main.post {
                     if (isDestroyed || session !== live) return@post
                     frameSeen = true
+                    setWaitingPatternVisible(false)
                     pauseMessage.visibility = View.GONE
                     status.text = if (model.isNullOrBlank()) {
                         getString(R.string.status_frame, width, height, rate)
@@ -285,6 +292,10 @@ class MainActivity : AppCompatActivity() {
                 preview.unlockCanvasAndPost(canvas)
             }
         }
+    }
+
+    private fun setWaitingPatternVisible(visible: Boolean) {
+        waitingPattern.visibility = if (visible) View.VISIBLE else View.GONE
     }
 
     private fun applyTransform() {

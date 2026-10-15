@@ -68,6 +68,16 @@
         app:layout_constraintStart_toEndOf="@id/side_start"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.sqwado.sonyscreen.WaitingPatternView
+        android:id="@+id/waiting_pattern"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/status_waiting"
+        app:layout_constraintBottom_toBottomOf="@id/preview"
+        app:layout_constraintEnd_toEndOf="@id/preview"
+        app:layout_constraintStart_toStartOf="@id/preview"
+        app:layout_constraintTop_toTopOf="@id/preview" />
+
     <TextView
         android:id="@+id/pause_message"
         android:layout_width="0dp"

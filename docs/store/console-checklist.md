@@ -16,7 +16,11 @@ Coche au fur et à mesure. Textes prêts à coller : `listing-fr.txt` / `listing
 - [ ] (Optionnel) ajouter locale **en-US** depuis `listing-en.txt`
 - [ ] Icône 512×512 : `docs/store/assets/icon-512.png`
 - [ ] Feature graphic 1024×500 : `docs/store/assets/feature-graphic.png`
-- [ ] Au moins **2 captures** téléphone paysage (prendre sur appareil réel avec live view)
+- [ ] Captures téléphone paysage (dans `docs/store/assets/`) :
+  - `screenshot-live-view.jpg`
+  - `screenshot-waiting-controls.jpg`
+  - `screenshot-waiting-locked.jpg`
+  - `screenshot-playback.jpg`
 - [ ] Catégorie : **Photographie**
 - [ ] Coordonnées contact développeur (e-mail)
 - [ ] URL politique de confidentialité (voir §5)
